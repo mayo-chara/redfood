@@ -13,6 +13,42 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <%= link_to(image_tag("logo.png", size: "50"), root_path, class: "navbar-brand" )%>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <%= link_to "BERANDA", root_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "LAYANAN", root_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "BLOG", root_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "HUBUNGI KAMI", root_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "COOK IT YOURSELF", root_path, class: "nav-link" %>
+            </li>
+            <% if current_user.nil? %>
+              <li class="nav-item">
+                <%= link_to new_user_session_path, class: 'nav-link' do %>MASUK<% end %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to destroy_user_session_path, class: 'nav-link', method: :delete do %>KELUAR<% end %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

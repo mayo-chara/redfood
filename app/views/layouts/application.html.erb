@@ -13,6 +13,7 @@
   </head>
 
   <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-light navbar-custom sticky-top">
       <div class="container-fluid">
         <%= link_to(image_tag("logo.png", size: "50"), root_path, class: "navbar-brand" )%>
@@ -49,6 +50,29 @@
         </div>
       </div>
     </nav>
+    <!-- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag("slide1.jpg") %>
+          <div class="carousel-caption">
+            <button type="button" class="btn btn-outline-light btn-lg">LIHAT DEMO</button>
+            <button type="button" class="btn btn-primary btn-lg">Ayo Mulai!</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("slide2.jpg") %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("slide3.jpg") %>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

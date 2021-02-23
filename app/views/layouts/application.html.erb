@@ -61,6 +61,8 @@
         <div class="carousel-item active">
           <%= image_tag("slide1.jpg") %>
           <div class="carousel-caption">
+            <h1 class="display-2">MAU BISNIS KULINER?</h1>
+            <h3>Konsultasikan bisnis kuliner anda bersama kami!</h3>
             <button type="button" class="btn btn-outline-light btn-lg">LIHAT DEMO</button>
             <button type="button" class="btn btn-primary btn-lg">Ayo Mulai!</button>
           </div>
@@ -74,5 +76,41 @@
       </div>
     </div>
     <%= yield %>
+    <!-- footer -->
+    <div class="container-fluid padding">
+      <div class="row text-center">
+
+        <div class="col-md-4">
+          <%= image_tag("logo.png", size: "200x50") %>
+          <hr class="light">
+          <p>Phone </p>
+          <p>email</p>
+          <p>address</p>
+          <p>City</p>
+        </div>
+
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>Waktu Kami</h5>
+          <hr class="light">
+          <p>Senin </p>
+          <p>Sabtu</p>
+          <p>Minggu</p>
+        </div>
+
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>Peta Lokasi</h5>
+          <hr class="light">
+        </div>
+
+        <div class="col-12">
+          <hr class="light">
+          <h5>&copy; redfood.id</h5>
+        </div>
+
+      </div>
+    </div>
+
   </body>
 </html>

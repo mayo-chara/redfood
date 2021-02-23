@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="row jumbotron">
 		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-			<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p class="lead">Kami, Red Food Group adalah sebuah perusahaan start up di bidang konsultasi kuliner. Dengan kelebihan yang dimiliki team Red Food Group, kami akan berusaha untuk membantu menyelesaikan permasalahan bisnis kuliner teman-teman</p>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
 			<%= link_to '<button type="button" class="btn btn-outline-secondary btl-lg">Lorem Ipsum</button>'.html_safe, root_path %>
@@ -13,11 +13,11 @@
 <div class="container-fluid padding">
 	<div class="row welcome text-center">
 		<div class="col-12">
-			<h1 class="display-4">Mengapa RedFood?</h1>
+			<h1 class="display-4">Jadi Begini Ceritanya...</h1>
 		</div>
 		<hr>
 		<div class="col-12">
-			<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p class="lead">Dimulai pada tahun 2017, kami memulai jasa konsultasi untuk sebuah restoran di Jakarta. Kemudian secara konvensional kami memulai mengembangkan sayap secara mouth to mouth. Dan di tahun 2020, dengan kesadaran untuk membantu UMKM di Indonesia kami memutuskan untuk masuk kedalam platform digital, dimana UMKM akan lebih mudah mendapat pertolongan kami untuk mengatasi permasalahan bisnisnya. </p>
 		</div>
 	</div>
 </div>
@@ -55,6 +55,92 @@
 		</div>
 		<div class="col-lg-6">
 			<%= image_tag("slide1.jpg", class: "img-thumbnail") %>
+		</div>
+	</div>
+</div>
+<hr class="my-4">
+<!-- fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+			
+		</div>
+	</div>
+</figure>
+<!-- Meet The Team -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Meet the Team</h1>
+		</div>
+	</div>
+</div>
+<!-- cards section -->
+<div class="container-fluid padding">
+	<div class="row padding">
+
+		<div class="col-md-4">
+			<div class="card">
+				<%= image_tag("profile1.jpg", class: "card-img-top") %>
+				<div class="card-body">
+					<h4 class="card-title">Haris Sasmita</h4>
+					<p class="card-text">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					<%= link_to "See Profile", root_path, class: "btn btn-outline-secondary" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<%= image_tag("profile1.jpg", class: "card-img-top") %>
+				<div class="card-body">
+					<h4 class="card-title">Yoseph Gratika</h4>
+					<p class="card-text">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					<%= link_to "See Profile", root_path, class: "btn btn-outline-secondary" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<%= image_tag("profile1.jpg", class: "card-img-top") %>
+				<div class="card-body">
+					<h4 class="card-title">Haris Sasmita</h4>
+					<p class="card-text">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					<%= link_to "See Profile", root_path, class: "btn btn-outline-secondary" %>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- Two Column Section -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<%= image_tag("slide1.jpg", class: "img-thumbnail") %>
+		</div>
+		<div class="col-lg-6">
+			<h2>Our Philosophy...</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<br>
+		</div>		
+	</div>
+</div>
+<!-- connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<%= link_to '<i class="fab fa-facebook"></i>'.html_safe, root_path %>
+			<%= link_to '<i class="fab fa-twitter"></i>'.html_safe, root_path %>
+			<%= link_to '<i class="fab fa-google-plus-g"></i>'.html_safe, root_path %>
+			<%= link_to '<i class="fab fa-instagram"></i>'.html_safe, root_path %>
+			<%= link_to '<i class="fab fa-youtube"></i>'.html_safe, root_path %>
 		</div>
 	</div>
 </div>
